@@ -1,0 +1,39 @@
+@font-face {
+  font-family: "GT-Walsheim-Pro";
+  src: url("../fonts/GT_Walsheim_Pro/GT-Walsheim-Pro-Light.eot"),
+       url("../fonts/GT_Walsheim_Pro/GT-Walsheim-Pro-Light.woff") format("woff"),
+       url("../fonts/GT_Walsheim_Pro/GT-Walsheim-Pro-Light.ttf") format("truetype");
+  font-weight: lighter;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "GT-Walsheim-Pro";
+  src: url("../fonts/GT_Walsheim_Pro/GT-Walsheim-Pro-Regular.eot"),
+       url("../fonts/GT_Walsheim_Pro/GT-Walsheim-Pro-Regular.woff") format("woff"),
+       url("../fonts/GT_Walsheim_Pro/GT-Walsheim-Pro-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "GT-Walsheim-Pro";
+  src: url("../fonts/GT_Walsheim_Pro/GT-Walsheim-Pro-Bold.eot"),
+       url("../fonts/GT_Walsheim_Pro/GT-Walsheim-Pro-Bold.woff") format("woff"),
+       url("../fonts/GT_Walsheim_Pro/GT-Walsheim-Pro-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+
+.heading {
+  padding-top: 112px;
+  padding-bottom: 48px;
+}
+
+.content-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: calc(100vh - 362px);
+}

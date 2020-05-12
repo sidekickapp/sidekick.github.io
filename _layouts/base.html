@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, viewport-fit=cover, initial-scale=1.0, maximum-scale=1, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+
+    {% include meta-tags.html %}
+
+    <title>{{ site.title }}</title>
+
+    <!-- FONTS -->
+
+    <!-- FontAwesome 5 -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+
+    <!-- STYLESHEET -->
+
+    <!-- Base -->
+    <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/{{ site.stylesheet }}.css">
+
+    <!-- Global -->
+    <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/global.css">
+
+    <!-- Layout Specific CSS -->
+    {% if layout.layout-styles %}
+      <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/{{ layout.layout-styles }}.css">
+    {% endif %}
+
+    <!-- PLUGINS -->
+
+    <!-- PWA -->
+    <!-- <link rel="manifest" href="{{ site.baseurl }}/manifest.json"> -->
+
+  </head>
+
+  <body>
+
+    {{ content }}
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.1/moment.min.js"></script>
+    <script src="{{ site.baseurl }}/assets/js/bootstrap.bundle.min.js"></script>
+    <script src="{{ site.baseurl }}/assets/js/functions.js"></script>
+
+    <!-- PLUGINS -->
+
+  </body>
+
+</html>
